@@ -1,4 +1,4 @@
-package info.finitestate.java.codelets;
+package info.finitestate.codelets;
 
 import java.util.HashMap;
 import java.util.Map;
