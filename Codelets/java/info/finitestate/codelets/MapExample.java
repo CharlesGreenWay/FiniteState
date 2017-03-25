@@ -18,5 +18,8 @@ public class MapExample {
 		String resignedEmployee = employees.remove(3);
 		System.out.println("Employee who resigned was " + resignedEmployee);
 		
+		//Duplicate insertion of same key
+		String replacedEmployee = employees.put(1, "Way");
+		System.out.println("Old value associated with key 1 is " + replacedEmployee);
 	}
 }
