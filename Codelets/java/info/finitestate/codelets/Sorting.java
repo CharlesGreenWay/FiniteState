@@ -18,8 +18,8 @@ public class Sorting {
 		//In java 8, we can use method references
 		Arrays.sort(array, String::compareToIgnoreCase);
 		// For reverse sort, we can use reversed()
-		Arrays.sort(array, String.CASE_INSENSITIVE_ORDER.reversed());
-		System.out.println("Reverse sorting : " + Arrays.toString(array));
+		Arrays.parallelSort(array, String.CASE_INSENSITIVE_ORDER.reversed());
+		System.out.println("Reverse and Parallel sorting : " + Arrays.toString(array));
 		
 		List<Integer> list = Arrays.asList(5, 3, 8, 2, 1);
 		Collections.sort(list);	// Java 7 and earlier using Collections utility Class
