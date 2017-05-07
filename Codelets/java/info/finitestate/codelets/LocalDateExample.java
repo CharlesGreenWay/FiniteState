@@ -25,7 +25,7 @@ public class LocalDateExample {
 		
 		//Month starts from 1 in Java 8 time package
 		int monthInJDK8 = Month.JANUARY.getValue();
-		LocalDateTime newYear = LocalDateTime.of(year, monthInJDK8, dayOfMonth, hourOfDay, minute);
+		LocalDateTime newYear = LocalDateTime.of(year, monthInJDK8, dayOfMonth, hourOfDay, minute, second);
 		System.out.println("New year from JDK 8 : " + newYear);
 	}
 }
